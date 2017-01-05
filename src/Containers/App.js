@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../css/App.css';
+import {Grid, Row}from 'react-bootstrap'
 import Header from '../Containers/Header';
 import Slider from '../Containers/Slider'
 import Footer from '../Containers/Footer'
@@ -7,11 +8,13 @@ import Footer from '../Containers/Footer'
 class App extends Component {
     render() {
         return (
-            <div className="page-wrapper">
+        <Grid bsClass="page-wrapper">
+            <Row>
                 <Header />
                 <Slider/>
                 <Footer/>
-            </div>
+            </Row>
+        </Grid>
         );
     }
 }
