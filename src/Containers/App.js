@@ -4,6 +4,9 @@ import {Grid, Row}from 'react-bootstrap'
 import Header from '../Containers/Header';
 import Slider from '../Containers/Slider'
 import Footer from '../Containers/Footer'
+import BestSeller from '../Containers/BestSeller'
+import SpecialOffer from '../Containers/SpecialOffer'
+import NewArrival from '../Containers/NewArrival'
 
 class App extends Component {
     render() {
@@ -11,8 +14,11 @@ class App extends Component {
         <Grid bsClass="page-wrapper">
             <Row>
                 <Header />
-                <Slider/>
-                <Footer/>
+                <Slider />
+                <BestSeller/>
+                <SpecialOffer/>
+                <NewArrival/>
+                <Footer />
             </Row>
         </Grid>
         );
